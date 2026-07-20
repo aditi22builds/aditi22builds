@@ -34,10 +34,6 @@
 </p>
 
 
-## 💻 Top Languages
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aditi22Builds&layout=compact&theme=github_dark&hide_border=true" alt="Top Languages" />
-
 
 ## 📫 Connect with Me
 

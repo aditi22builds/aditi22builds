@@ -1,106 +1,119 @@
-<h1 align="center">Hi 👋, I'm Aditi Patil</h1>
+<div align="center">
 
-<h3 align="center">
-Computer Science & Engineering (Data Science) Student | Aspiring AI & ML Engineer | Lifelong Learner
-</h3>
+# Hi there, I'm Aditi Patil 👋
 
-<p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=800&lines=Second-Year+B.Tech+Student;Computer+Science+%26+Engineering+(Data+Science);Learning+Python+%7C+Machine+Learning+%7C+Git;Building+Projects+One+Step+at+a+Time;Future+AI+Engineer+🚀" />
-</p>
+### Computer Science & Engineering (Data Science) Student
 
-<p align="center">
-<img src="https://komarev.com/ghpvc/?username=aditi22builds&label=Profile+Views&color=0e75b6&style=flat" />
-</p>
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3500&pause=1200&color=58A6FF&center=true&vCenter=true&width=750&lines=Exploring+Artificial+Intelligence;Learning+Machine+Learning;Building+Projects+with+Python;Always+Learning+Something+New+🚀" />
+
+</div>
 
 ---
 
-# 👩‍💻 About Me
+## 👩‍💻 About Me
 
-🎓 **Second-Year B.Tech Student**
+```python
+class Aditi:
 
-💻 **Computer Science & Engineering (Data Science)**
+    education = "B.Tech CSE (Data Science) | Second Year"
 
-🌱 Currently learning
+    learning = [
+        "Python",
+        "Machine Learning",
+        "Data Science",
+        "Git & GitHub"
+    ]
 
-- Python
-- Data Science
-- Machine Learning
-- Git & GitHub
+    interests = [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Open Source",
+        "Research & Innovation"
+    ]
 
-🚀 Currently building beginner-friendly Python projects while strengthening my programming fundamentals.
-
-💡 Passionate about Artificial Intelligence, Machine Learning, Data Science, and solving real-world problems through technology.
-
----
-
-# 🚀 Tech Stack
-
-<p align="left">
-<img src="https://skillicons.dev/icons?i=python,java,c,cpp,git,github,vscode" />
-</p>
-
----
-
-# 🌟 Interests
-
-- 🤖 Artificial Intelligence
-- 📊 Data Science
-- 🧠 Machine Learning
-- 🔬 Research & Innovation
-- 🌍 Open Source
-- 💻 Software Development
+    motto = "Keep learning. Keep building."
+```
 
 ---
 
-# 📈 GitHub Stats
+## ⚡ Tech Stack
 
 <p align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=aditi22builds&show_icons=true&theme=tokyonight&hide_border=true"/>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aditi22builds&layout=compact&theme=tokyonight&hide_border=true"/>
+<img src="https://skillicons.dev/icons?i=python,java,c,cpp,git,github,vscode"/>
 
 </p>
 
 ---
 
-# 🔥 GitHub Streak
+## 🌱 Currently Working On
+
+- 🐍 Improving Python programming skills
+- 📂 Building beginner-friendly Python projects
+- 🤖 Learning Machine Learning fundamentals
+- 📊 Exploring Data Science concepts
+- 🌍 Growing through hands-on development
+
+---
+
+## 📈 GitHub Analytics
 
 <p align="center">
-<img src="https://streak-stats.demolab.com?user=aditi22builds&theme=tokyonight&hide_border=true"/>
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=aditi22builds&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github"/>
+
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aditi22builds&layout=compact&theme=github_dark&hide_border=true"/>
+
+</p>
+
+<p align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com?user=aditi22builds&theme=github-dark-blue&hide_border=true"/>
+
 </p>
 
 ---
 
-# 🎯 Current Goals
+## 🚀 Featured Projects
 
-- 🐍 Master Python Programming
-- 📂 Build impactful Python Projects
-- 🤖 Learn Machine Learning
-- 🧠 Strengthen Data Structures & Algorithms
-- 🌍 Contribute to Open Source
-- 🚀 Explore AI & Data Science
+| Project | Description |
+|---------|-------------|
+| 🎮 Python Quiz Game | Interactive command-line quiz built with Python |
+| 🚀 More Projects Coming Soon... | Currently learning and building consistently |
 
 ---
 
-# 🌐 Connect with Me
+## 🎯 2026 Goals
 
-<p align="left">
+- Build 10+ quality projects
+- Master Python
+- Learn Machine Learning
+- Explore Artificial Intelligence
+- Contribute to Open Source
+- Improve Problem Solving & DSA
+
+---
+
+## 🌐 Connect With Me
+
+<p align="center">
 
 <a href="https://www.linkedin.com/in/aditi-patil-888560414">
-<img src="https://skillicons.dev/icons?i=linkedin" />
+<img src="https://skillicons.dev/icons?i=linkedin"/>
 </a>
 
 <a href="https://github.com/aditi22builds">
-<img src="https://skillicons.dev/icons?i=github" />
+<img src="https://skillicons.dev/icons?i=github"/>
 </a>
 
 </p>
 
 ---
 
-<h3 align="center">
+<div align="center">
 
-⭐ *"Every expert was once a beginner. Keep learning, keep building."*
+### ✨ *"The expert in anything was once a beginner."*
 
-</h3>
+Thanks for visiting! ⭐
+
+</div>

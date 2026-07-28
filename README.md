@@ -1,42 +1,119 @@
-# Hi there, I'm Aditi Patil 👋
+<h1 align="center">Hi 👋, I'm Aditi Patil</h1>
 
-🎓 *Second-Year B.Tech Student*  
-💻 *Computer Science & Engineering (Data Science)*
+<h3 align="center">
+A Passionate Computer Science Student | Data Science Enthusiast | Lifelong Learner
+</h3>
 
-## 🌱 Currently Learning
+<p align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=Second+Year+B.Tech+Student;Computer+Science+(Data+Science);Learning+Python+%7C+Machine+Learning;Future+AI+Engineer;Always+Learning+Something+New+🚀" />
+</p>
+
+---
+
+## 👩‍💻 About Me
+
+🎓 **Second-Year B.Tech Student**
+
+💻 **Computer Science & Engineering (Data Science)**
+
+🌱 Currently learning
+
 - Python
 - Data Science
 - Machine Learning
 - Git & GitHub
 
-## 💡 Interests
-- Artificial Intelligence
-- Machine Learning
-- Data Science
-- Research & Innovation
-- Open Source
+🚀 Currently building beginner-friendly Python projects to strengthen my programming skills.
 
-## 🛠️ Languages & Tools
+💡 Interested in solving real-world problems using AI and Data Science.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+---
 
-## 📊 GitHub Stats
+## 🚀 Tech Stack
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Aditi22Builds&show_icons=true&theme=github_dark&hide_border=true&cache_seconds=1800" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Aditi22Builds&layout=compact&theme=github_dark&hide_border=true&cache_seconds=1800" alt="Top Languages" />
+<p align="left">
+
+<img src="https://skillicons.dev/icons?i=python" />
+<img src="https://skillicons.dev/icons?i=java" />
+<img src="https://skillicons.dev/icons?i=c" />
+<img src="https://skillicons.dev/icons?i=cpp" />
+<img src="https://skillicons.dev/icons?i=git" />
+<img src="https://skillicons.dev/icons?i=github" />
+<img src="https://skillicons.dev/icons?i=vscode" />
+
 </p>
 
+---
 
+## 🌟 Interests
 
-## 📫 Connect with Me
+- 🤖 Artificial Intelligence
+- 📊 Data Science
+- 🧠 Machine Learning
+- 🔬 Research & Innovation
+- 🌍 Open Source
 
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aditi-patil-888560414/)
+---
 
-⭐ Always learning, always building.
+## 📈 GitHub Stats
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=aditi22builds&show_icons=true&theme=tokyonight&hide_border=true"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aditi22builds&layout=compact&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+---
+
+## 🔥 GitHub Streak
+
+<p align="center">
+
+<img src="https://streak-stats.demolab.com?user=aditi22builds&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+---
+
+## 📌 Current Goals
+
+- ✅ Master Python
+- ✅ Build exciting Python projects
+- ✅ Learn Machine Learning
+- ✅ Contribute to Open Source
+- ✅ Strengthen Data Structures & Algorithms
+- ✅ Explore AI and Data Science
+
+---
+
+## 🌐 Connect with Me
+
+<p align="left">
+
+<a href="YOUR_LINKEDIN_LINK">
+<img src="https://skillicons.dev/icons?i=linkedin" />
+</a>
+
+<a href="https://github.com/aditi22builds">
+<img src="https://skillicons.dev/icons?i=github" />
+</a>
+
+</p>
+
+---
+
+<p align="center">
+
+![](https://komarev.com/ghpvc/?username=aditi22builds&color=blue&style=flat)
+
+</p>
+
+---
+
+<h3 align="center">
+
+⭐ "Every expert was once a beginner. Keep learning, keep building."
+
+</h3>

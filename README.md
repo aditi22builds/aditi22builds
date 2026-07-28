@@ -1,16 +1,20 @@
 <h1 align="center">Hi 👋, I'm Aditi Patil</h1>
 
 <h3 align="center">
-A Passionate Computer Science Student | Data Science Enthusiast | Lifelong Learner
+Computer Science & Engineering (Data Science) Student | Aspiring AI & ML Engineer | Lifelong Learner
 </h3>
 
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=Second+Year+B.Tech+Student;Computer+Science+(Data+Science);Learning+Python+%7C+Machine+Learning;Future+AI+Engineer;Always+Learning+Something+New+🚀" />
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=800&lines=Second-Year+B.Tech+Student;Computer+Science+%26+Engineering+(Data+Science);Learning+Python+%7C+Machine+Learning+%7C+Git;Building+Projects+One+Step+at+a+Time;Future+AI+Engineer+🚀" />
+</p>
+
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=aditi22builds&label=Profile+Views&color=0e75b6&style=flat" />
 </p>
 
 ---
 
-## 👩‍💻 About Me
+# 👩‍💻 About Me
 
 🎓 **Second-Year B.Tech Student**
 
@@ -23,39 +27,32 @@ A Passionate Computer Science Student | Data Science Enthusiast | Lifelong Learn
 - Machine Learning
 - Git & GitHub
 
-🚀 Currently building beginner-friendly Python projects to strengthen my programming skills.
+🚀 Currently building beginner-friendly Python projects while strengthening my programming fundamentals.
 
-💡 Interested in solving real-world problems using AI and Data Science.
+💡 Passionate about Artificial Intelligence, Machine Learning, Data Science, and solving real-world problems through technology.
 
 ---
 
-## 🚀 Tech Stack
+# 🚀 Tech Stack
 
 <p align="left">
-
-<img src="https://skillicons.dev/icons?i=python" />
-<img src="https://skillicons.dev/icons?i=java" />
-<img src="https://skillicons.dev/icons?i=c" />
-<img src="https://skillicons.dev/icons?i=cpp" />
-<img src="https://skillicons.dev/icons?i=git" />
-<img src="https://skillicons.dev/icons?i=github" />
-<img src="https://skillicons.dev/icons?i=vscode" />
-
+<img src="https://skillicons.dev/icons?i=python,java,c,cpp,git,github,vscode" />
 </p>
 
 ---
 
-## 🌟 Interests
+# 🌟 Interests
 
 - 🤖 Artificial Intelligence
 - 📊 Data Science
 - 🧠 Machine Learning
 - 🔬 Research & Innovation
 - 🌍 Open Source
+- 💻 Software Development
 
 ---
 
-## 📈 GitHub Stats
+# 📈 GitHub Stats
 
 <p align="center">
 
@@ -67,32 +64,30 @@ A Passionate Computer Science Student | Data Science Enthusiast | Lifelong Learn
 
 ---
 
-## 🔥 GitHub Streak
+# 🔥 GitHub Streak
 
 <p align="center">
-
 <img src="https://streak-stats.demolab.com?user=aditi22builds&theme=tokyonight&hide_border=true"/>
-
 </p>
 
 ---
 
-## 📌 Current Goals
+# 🎯 Current Goals
 
-- ✅ Master Python
-- ✅ Build exciting Python projects
-- ✅ Learn Machine Learning
-- ✅ Contribute to Open Source
-- ✅ Strengthen Data Structures & Algorithms
-- ✅ Explore AI and Data Science
+- 🐍 Master Python Programming
+- 📂 Build impactful Python Projects
+- 🤖 Learn Machine Learning
+- 🧠 Strengthen Data Structures & Algorithms
+- 🌍 Contribute to Open Source
+- 🚀 Explore AI & Data Science
 
 ---
 
-## 🌐 Connect with Me
+# 🌐 Connect with Me
 
 <p align="left">
 
-<a href="YOUR_LINKEDIN_LINK">
+<a href="https://www.linkedin.com/in/aditi-patil-888560414">
 <img src="https://skillicons.dev/icons?i=linkedin" />
 </a>
 
@@ -104,16 +99,8 @@ A Passionate Computer Science Student | Data Science Enthusiast | Lifelong Learn
 
 ---
 
-<p align="center">
-
-![](https://komarev.com/ghpvc/?username=aditi22builds&color=blue&style=flat)
-
-</p>
-
----
-
 <h3 align="center">
 
-⭐ "Every expert was once a beginner. Keep learning, keep building."
+⭐ *"Every expert was once a beginner. Keep learning, keep building."*
 
 </h3>

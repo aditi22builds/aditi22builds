@@ -1,119 +1,82 @@
 <div align="center">
 
-# Hi there, I'm Aditi Patil 👋
+<!-- ASCII_PORTRAIT_START -->
+<img src="./ascii.svg" width="460" alt="Aditi Patil — ASCII Portrait"/>
+<!-- ASCII_PORTRAIT_END -->
 
-### Computer Science & Engineering (Data Science) Student
+<img src="./stats.svg" width="620" alt="Contributions"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3500&pause=1200&color=58A6FF&center=true&vCenter=true&width=750&lines=Exploring+Artificial+Intelligence;Learning+Machine+Learning;Building+Projects+with+Python;Always+Learning+Something+New+🚀" />
+<samp>
+<a href="https://www.linkedin.com/in/aditi-patil-888560414">linkedin</a> &nbsp;·&nbsp;
+<a href="https://github.com/aditi22builds">github</a>
+</samp>
 
 </div>
 
----
+<br>
 
-## 👩‍💻 About Me
+<img src="./hd-whoami.svg" width="620" alt="whoami"/>
 
-```python
-class Aditi:
+> Second-Year B.Tech Student in Computer Science & Engineering (Data Science).<br>
+> Exploring AI, ML, and Data Science through hands-on projects and open source.
 
-    education = "B.Tech CSE (Data Science) | Second Year"
+I focus on building practical tools, understanding core machine learning fundamentals,<br>
+and shipping code in public. Constantly experimenting with Python, algorithms, and data.
 
-    learning = [
-        "Python",
-        "Machine Learning",
-        "Data Science",
-        "Git & GitHub"
-    ]
+<img src="./hd-stack.svg" width="620" alt="stack"/>
 
-    interests = [
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Open Source",
-        "Research & Innovation"
-    ]
+<samp>python &nbsp; java &nbsp; c &nbsp; c++ &nbsp; data-science &nbsp; machine-learning &nbsp; git &nbsp; github &nbsp; vs-code</samp>
 
-    motto = "Keep learning. Keep building."
-```
+<img src="./hd-projects.svg" width="620" alt="projects"/>
 
----
+**[python-quiz-game](https://github.com/aditi22builds/python-quiz-game)** &nbsp;·&nbsp; <samp>python</samp><br>
+Command-line interactive quiz engine featuring progressive difficulty tiers,<br>
+dynamic scoring algorithms, and persistent leaderboard tracking.
 
-## ⚡ Tech Stack
+**[kyntra](https://github.com/aditi22builds/kyntra)** &nbsp;·&nbsp; <samp>typescript</samp><br>
+Modern full-stack web project exploring component architecture and typed workflows.
 
-<p align="center">
+**[pinchbooth](https://github.com/aditi22builds/pinchbooth)** &nbsp;·&nbsp; <samp>html, css, javascript</samp><br>
+Interactive camera booth application with real-time UI interaction in the browser.
 
-<img src="https://skillicons.dev/icons?i=python,java,c,cpp,git,github,vscode"/>
+**[My-Portfolio](https://github.com/aditi22builds/My-Portfolio)** &nbsp;·&nbsp; <samp>javascript, html, css</samp><br>
+Personal developer portfolio showcasing builds, technical skills, and background.
 
-</p>
+**[my_python_projects.](https://github.com/aditi22builds/my_python_projects.)** &nbsp;·&nbsp; <samp>python</samp><br>
+Curated collection of algorithms, problem-solving scripts, and mini-tools.
 
----
+<img src="./hd-stats.svg" width="620" alt="stats"/>
 
-## 🌱 Currently Working On
+<div align="center">
 
-- 🐍 Improving Python programming skills
-- 📂 Building beginner-friendly Python projects
-- 🤖 Learning Machine Learning fundamentals
-- 📊 Exploring Data Science concepts
-- 🌍 Growing through hands-on development
+<img src="./streak.svg" width="620" alt="Contribution Streak"/>
 
----
+<img src="./langs.svg" width="620" alt="Top Languages by Bytes and Repos"/>
 
-## 📈 GitHub Analytics
+<img src="./year.svg" width="620" alt="The Year in ASCII Ramp"/>
 
-<p align="center">
+</div>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=aditi22builds&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github"/>
+<img src="./hd-connect.svg" width="620" alt="connect"/>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aditi22builds&layout=compact&theme=github_dark&hide_border=true"/>
+<samp>
+[linkedin] <a href="https://www.linkedin.com/in/aditi-patil-888560414">linkedin.com/in/aditi-patil-888560414</a><br>
+[github] &nbsp;&nbsp;<a href="https://github.com/aditi22builds">github.com/aditi22builds</a>
+</samp>
 
-</p>
+<img src="./hd-about-this-page.svg" width="620" alt="about this page"/>
 
-<p align="center">
+Every visual component on this profile is self-rendered without external third-party widgets.<br>
+`ascii.svg` is an animated SMIL portrait generated from a source photo by<br>
+[`scripts/make_portrait.py`](scripts/make_portrait.py), inlining the SIL OFL<br>
+[JetBrains Mono](scripts/fonts) typeface to lock character advance width across platforms.
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=aditi22builds&theme=github-dark-blue&hide_border=true"/>
-
-</p>
-
----
-
-## 🚀 Featured Projects
-
-| Project | Description |
-|---------|-------------|
-| 🎮 Python Quiz Game | Interactive command-line quiz built with Python |
-| 🚀 More Projects Coming Soon... | Currently learning and building consistently |
-
----
-
-## 🎯 2026 Goals
-
-- Build 10+ quality projects
-- Master Python
-- Learn Machine Learning
-- Explore Artificial Intelligence
-- Contribute to Open Source
-- Improve Problem Solving & DSA
-
----
-
-## 🌐 Connect With Me
-
-<p align="center">
-
-<a href="https://www.linkedin.com/in/aditi-patil-888560414">
-<img src="https://skillicons.dev/icons?i=linkedin"/>
-</a>
-
-<a href="https://github.com/aditi22builds">
-<img src="https://skillicons.dev/icons?i=github"/>
-</a>
-
-</p>
+Contribution metrics and section headings are drawn as pure vector graphics by<br>
+[`scripts/generate_stats.py`](scripts/generate_stats.py) and refreshed automatically via<br>
+[GitHub Actions](.github/workflows/stats.yml).
 
 ---
 
 <div align="center">
-
-### ✨ *"The expert in anything was once a beginner."*
-
-Thanks for visiting! ⭐
-
+<samp>© 2026 Aditi Patil · Keep learning. Keep building.</samp>
 </div>

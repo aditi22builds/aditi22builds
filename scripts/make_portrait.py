@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
-"""Turn a photo into ascii.svg — a self-typing, monochrome ASCII portrait.
+"""Turn a photo into an animated, monochrome ASCII terminal portrait (ascii.svg).
 
-Generates an animated SMIL SVG with embedded JetBrains Mono font subset.
+Features:
+  - Background removal via rembg & edge-preserving smoothing
+  - Monochromatic 13-level character ramp mapping (92 columns)
+  - Embedded JetBrains Mono font subset (exact 0.600 em geometry)
+  - SMIL initial typing reveal with riding block cursor
+  - Continuous CRT scanline luminous sweep in infinite loop
+  - Bottom terminal command prompt with infinite blinking cursor
+  - Native GitHub Light & Dark mode adaptation
 
 Usage:
-    pip install pillow numpy opencv-python-headless rembg onnxruntime
     python scripts/make_portrait.py assets/profile.jpg --crop 20,140,588,860 --cols 92
 """
 import argparse
@@ -23,12 +29,14 @@ GAMMA = 1.0                # ramp mapping exponent
 CURVE = 1.65               # power curve for shadow definition
 ROW_RATIO = 0.48           # monospace cell aspect ratio (height-to-width)
 
-FG_LIGHT = "#6e7681"       # readable on GitHub light
+FG_LIGHT = "#57606a"       # readable on GitHub light
 FG_DARK = "#c9d1d9"        # readable on GitHub dark
+ACCENT = "#58a6ff"         # cyber blue accent
+ACCENT_GREEN = "#3fb950"   # status green
 CHAR_W = 7.74              # 0.600 em at FONT_SIZE
 FONT_SIZE = 12.9
 LINE_H = 15
-ROW_DELAY = 0.08           # per-row wipe stagger in seconds
+ROW_DELAY = 0.07           # per-row wipe stagger in seconds
 FAMILY = "JBMono,ui-monospace,SFMono-Regular,Menlo,Consolas,&apos;Liberation Mono&apos;,monospace"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -76,9 +84,12 @@ def to_lines(img, cols=COLS, gamma=GAMMA):
 
 
 def build_svg(lines, cols=COLS, font_path=FONT_PATH):
-    pad = 14
-    width = int(cols * CHAR_W + pad * 2)
-    height = len(lines) * LINE_H + pad * 2
+    pad_x = 18
+    pad_top = 36
+    pad_bottom = 32
+    width = int(cols * CHAR_W + pad_x * 2)
+    height = int(len(lines) * LINE_H + pad_top + pad_bottom)
+    total_type_time = len(lines) * ROW_DELAY
 
     font_rule = ""
     if font_path and os.path.exists(font_path):
@@ -88,33 +99,92 @@ def build_svg(lines, cols=COLS, font_path=FONT_PATH):
                      f"font-weight:400;font-display:block;"
                      f"src:url(data:font/woff2;base64,{b64}) format(&apos;woff2&apos;)}}")
 
-    p = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" '
-         f'height="{height}" viewBox="0 0 {width} {height}" '
-         f'font-family="{FAMILY}">',
-         f'<style>{font_rule}.a{{fill:{FG_LIGHT}}}'
-         f'@media(prefers-color-scheme:dark){{.a{{fill:{FG_DARK}}}}}</style>']
+    p = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" fill="none" font-family="{FAMILY}">',
+        f'<style>{font_rule}',
+        f'.t-bg{{fill:#ffffff;stroke:#d0d7de;stroke-width:1}}',
+        f'.t-hdr{{fill:#f6f8fa;stroke:#d0d7de;stroke-width:1}}',
+        f'.t-dot-r{{fill:#ff5f56}}.t-dot-y{{fill:#ffbd2e}}.t-dot-g{{fill:#27c93f}}',
+        f'.t-title{{fill:#57606a;font-size:11px;font-weight:500}}',
+        f'.a{{fill:{FG_LIGHT}}}',
+        f'.cur{{fill:{ACCENT};opacity:0.8}}',
+        f'.t-prompt{{fill:#57606a;font-size:11.5px}}',
+        f'.t-p-acc{{fill:{ACCENT};font-weight:600}}',
+        f'@media(prefers-color-scheme:dark){{',
+        f'.t-bg{{fill:#0d1117;stroke:#30363d}}',
+        f'.t-hdr{{fill:#161b22;stroke:#30363d}}',
+        f'.t-title{{fill:#8b949e}}',
+        f'.a{{fill:{FG_DARK}}}',
+        f'.cur{{fill:{ACCENT};opacity:0.9}}',
+        f'.t-prompt{{fill:#8b949e}}',
+        f'.t-p-acc{{fill:{ACCENT}}}',
+        f'}}',
+        f'</style>',
+        
+        # Terminal Header Bar
+        f'<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="8" class="t-bg"/>',
+        f'<path d="M1 9a8 8 0 0 1 8-8h{width - 18}a8 8 0 0 1 8 8v19H1z" class="t-hdr"/>',
+        f'<circle cx="16" cy="14" r="4.5" class="t-dot-r"/>',
+        f'<circle cx="29" cy="14" r="4.5" class="t-dot-y"/>',
+        f'<circle cx="42" cy="14" r="4.5" class="t-dot-g"/>',
+        f'<text x="{width / 2}" y="17.5" text-anchor="middle" class="t-title">aditi22builds ~ profile.sh</text>',
 
+        # Luminous Scanline Definition
+        f'<defs>',
+        f'<linearGradient id="scanline" x1="0" y1="0" x2="0" y2="1">',
+        f'<stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>',
+        f'<stop offset="50%" stop-color="{ACCENT}" stop-opacity="0.14"/>',
+        f'<stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>',
+        f'</linearGradient>',
+        f'</defs>',
+    ]
+
+    # Staggered Typewriter Reveal
     for i, line in enumerate(lines):
-        y = pad + i * LINE_H
+        y = pad_top + i * LINE_H
         begin = f"{i * ROW_DELAY:.2f}s"
         end = f"{(i + 1) * ROW_DELAY:.2f}s"
         w = max(len(line), 1) * CHAR_W
         safe = (line.replace("&", "&amp;").replace("<", "&lt;")
                     .replace(">", "&gt;"))
 
-        p.append(f'<clipPath id="c{i}"><rect x="{pad}" y="{y}" '
+        p.append(f'<clipPath id="c{i}"><rect x="{pad_x}" y="{y}" '
                  f'height="{LINE_H}" width="0">'
                  f'<animate attributeName="width" from="0" to="{w:.1f}" '
                  f'begin="{begin}" dur="{ROW_DELAY}s" fill="freeze"/>'
                  f'</rect></clipPath>')
         p.append(f'<g clip-path="url(#c{i})"><text xml:space="preserve" '
-                 f'x="{pad}" y="{y + 11.2:.1f}" class="a" '
+                 f'x="{pad_x}" y="{y + 11.2:.1f}" class="a" '
                  f'font-size="{FONT_SIZE}">{safe}</text></g>')
+        
+        # Cursor tracking wipe
         p.append(f'<rect y="{y + 1}" width="6" height="12" class="a" opacity="0">'
-                 f'<animate attributeName="x" from="{pad}" to="{pad + w:.1f}" '
+                 f'<animate attributeName="x" from="{pad_x}" to="{pad_x + w:.1f}" '
                  f'begin="{begin}" dur="{ROW_DELAY}s" fill="freeze"/>'
                  f'<set attributeName="opacity" to="0.8" begin="{begin}"/>'
                  f'<set attributeName="opacity" to="0" begin="{end}"/></rect>')
+
+    # Continuous CRT Scanline Sweep
+    p.append(f'<rect x="{pad_x}" y="{pad_top}" width="{cols * CHAR_W}" height="42" fill="url(#scanline)" opacity="0">')
+    p.append(f'<animate attributeName="y" from="{pad_top - 42}" to="{pad_top + len(lines) * LINE_H}" '
+             f'dur="3.8s" begin="{total_type_time:.2f}s" repeatCount="indefinite"/>')
+    p.append(f'<animate attributeName="opacity" values="0;0.75;0.75;0" keyTimes="0;0.1;0.9;1" '
+             f'dur="3.8s" begin="{total_type_time:.2f}s" repeatCount="indefinite"/>')
+    p.append(f'</rect>')
+
+    # Bottom Terminal Prompt with Continuous Blinking Cursor
+    prompt_y = pad_top + len(lines) * LINE_H + 18
+    p.append(f'<g opacity="0">')
+    p.append(f'<animate attributeName="opacity" from="0" to="1" begin="{total_type_time:.2f}s" dur="0.3s" fill="freeze"/>')
+    p.append(f'<text x="{pad_x}" y="{prompt_y}" class="t-prompt">'
+             f'<tspan class="t-p-acc">aditi@dev</tspan>:<tspan class="t-p-acc">~</tspan>$ status --live <tspan fill="{ACCENT_GREEN}">● online</tspan></text>')
+    
+    cursor_x = pad_x + 285
+    p.append(f'<rect x="{cursor_x}" y="{prompt_y - 10}" width="7" height="13" class="cur">')
+    p.append(f'<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" begin="{total_type_time:.2f}s"/>')
+    p.append(f'</rect>')
+    p.append(f'</g>')
 
     p.append("</svg>")
     return "".join(p)
